@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            style="@style/mainview_top"
+            android:id="@+id/click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="artist"
+            android:text="@string/artist"
+            />
+
+        <RadioButton
+            style="@style/mainview_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="album"
+            android:text="@string/album"
+            />
+
+        <RadioButton
+            style="@style/mainview_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="allmusic"
+            android:text="@string/allmusic"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="content"
+            android:textSize="40sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/mainview_top_focus"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="goPlayMusic"
+            android:src="@drawable/music"
+            />
+
+        <TextView
+            android:id="@+id/tv_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

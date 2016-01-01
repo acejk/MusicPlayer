@@ -19,7 +19,7 @@ import com.ace.musicplayer.util.Constant;
  */
 public class MainView extends ActivityGroup {
     private MyBroadCastReceiver receiver;
-    private static TextView tv_music;
+    public static TextView tv_music;
     private LinearLayout body;
 
 

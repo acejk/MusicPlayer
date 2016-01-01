@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_musicTitle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#B9D3EE"
+        android:textSize="@dimen/item_title_textSize" />
+
+    <TextView
+        android:id="@+id/tv_musicDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/tv_musicTitle"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="#B9D3EE"
+        android:textSize="@dimen/item_title_textSize" />
+
+    <TextView
+        android:id="@+id/tv_artistalbumname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_musicTitle"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#B9D3EE"
+        android:textSize="10sp" />
+
+</RelativeLayout>

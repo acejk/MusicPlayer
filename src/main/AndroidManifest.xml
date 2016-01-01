@@ -16,9 +16,14 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".service.MediaPlayerService" />
+
         <activity android:name=".list.MainView" />
         <activity android:name=".list.ArtistList" />
         <activity android:name=".list.AlbumList" />
+        <activity android:name=".list.AllMusicList" />
+        <activity android:name=".list.DetailArtistList" />
+        <activity android:name=".list.DetailAlbumList" />
     </application>
 
 </manifest>

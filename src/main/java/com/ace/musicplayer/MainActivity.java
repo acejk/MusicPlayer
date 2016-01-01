@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
                 albumList = new ArrayList<AlbumMessage>();
                 int album_id = albumCursor.getInt(0);
 
-                Cursor dataCursor = getContentResolver().query(uri_data, new String[] {DATA, TITLE, DURATION, ARTIST, ALBUM, YEAR}, ALBUM_ID + " = ?", new String[] {String.valueOf(album_id)}, null);
+                Cursor dataCursor = getContentResolver().query(uri_data, new String[] {DATA, TITLE, DURATION, ARTIST_ID, ALBUM_ID, YEAR}, ALBUM_ID + " = ?", new String[] {String.valueOf(album_id)}, null);
                 if(dataCursor != null && dataCursor.getCount() > 0) {
                     count = dataCursor.getCount();
                     while(dataCursor.moveToNext()) {
@@ -151,7 +151,7 @@ public class MainActivity extends Activity {
                 artistList = new ArrayList<ArtistMessage>();
                 int artist_id = artistCursor.getInt(0);
 
-                Cursor dataCursor = getContentResolver().query(uri_data, new String[]{DATA, TITLE, DURATION, ARTIST, ALBUM, YEAR}, ARTIST_ID + " = ?", new String[]{String.valueOf(artist_id)}, null);
+                Cursor dataCursor = getContentResolver().query(uri_data, new String[]{DATA, TITLE, DURATION, ARTIST_ID, ALBUM_ID, YEAR}, ARTIST_ID + " = ?", new String[]{String.valueOf(artist_id)}, null);
                 if(dataCursor != null && dataCursor.getCount() > 0) {
                     while(dataCursor.moveToNext()) {
                         count = dataCursor.getCount();

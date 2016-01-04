@@ -20,14 +20,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends Activity {
-    String DATA = MediaStore.Audio.Media.DATA;
-    String TITLE = MediaStore.Audio.Media.TITLE;
-    String DURATION = MediaStore.Audio.Media.DURATION;
-    String ARTIST = MediaStore.Audio.Media.ARTIST;
-    String ALBUM = MediaStore.Audio.Media.ALBUM;
-    String ARTIST_ID = MediaStore.Audio.Media.ARTIST_ID;
-    String ALBUM_ID = MediaStore.Audio.Media.ALBUM_ID;
-    String YEAR = MediaStore.Audio.Media.YEAR;
+    String DATA = MediaStore.Audio.Media.DATA;//播放源
+    String TITLE = MediaStore.Audio.Media.TITLE;//歌曲名
+    String DURATION = MediaStore.Audio.Media.DURATION;//歌曲播放时长
+    String ARTIST = MediaStore.Audio.Media.ARTIST;//歌手
+    String ALBUM = MediaStore.Audio.Media.ALBUM;//专辑
+    String ARTIST_ID = MediaStore.Audio.Media.ARTIST_ID;//歌手id
+    String ALBUM_ID = MediaStore.Audio.Media.ALBUM_ID;//专辑id
+    String YEAR = MediaStore.Audio.Media.YEAR;//歌曲出版年
 
     Uri uri_data = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;//歌曲Uri
     Uri uri_artist = MediaStore.Audio.Artists.EXTERNAL_CONTENT_URI;//歌手Uri

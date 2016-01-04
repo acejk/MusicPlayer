@@ -4,14 +4,14 @@ package com.ace.musicplayer.entity;
  * Created by Administrator on 2015/12/31 0031.
  */
 public class MusicMessage {
-    private String title;
-    private String artist;
-    private int duration;
-    private String year;
-    private String album;
-    private String data;
-    private int artist_id;
-    private int album_id;
+    private String title;//歌曲名
+    private String artist;//歌手名
+    private int duration;//播放时长
+    private String year;//歌曲出版年份
+    private String album;//专辑
+    private String data;//播放源
+    private int artist_id;//歌手id
+    private int album_id;//专辑id
 
     public String getTitle() {
         return title;

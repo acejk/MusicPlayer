@@ -24,6 +24,7 @@
         <activity android:name=".list.AllMusicList" />
         <activity android:name=".list.DetailArtistList" />
         <activity android:name=".list.DetailAlbumList" />
+        <activity android:name=".play.PlayMusic" />
     </application>
 
 </manifest>

@@ -44,8 +44,8 @@ public class DetailArtistList extends Activity implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Constant.currentIndex = position;
 
-        Constant.title = MediaData.artistList.get(Constant.groupid).get(position).getTitle();;
-        Constant.artist = MediaData.artistList.get(Constant.groupid).get(position).getArtist();;
+        Constant.title = MediaData.artistList.get(Constant.groupid).get(position).getTitle();
+        Constant.artist = MediaData.artistList.get(Constant.groupid).get(position).getArtist();
         Constant.duration = MediaData.artistList.get(Constant.groupid).get(position).getDuration();
         Constant.total = TimeUtil.toTime(MediaData.artistList.get(Constant.groupid).get(position).getDuration());
         Constant._data = MediaData.artistList.get(Constant.groupid).get(position).getData();

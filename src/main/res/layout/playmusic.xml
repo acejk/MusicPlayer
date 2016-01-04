@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_musictitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="MrZhou"
+            android:paddingTop="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="3333" />
+
+
+
+
+    <com.ace.musicplayer.lrc.LrcView
+        android:id="@+id/lrcView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_currentTime"
+            style="@style/music_duration"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/sb_playmusic_sb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="30dp"
+            android:minHeight="20dp"
+            android:padding="10dp"
+            android:progressDrawable="@drawable/media_player_progress_bg"
+            android:thumb="@drawable/mediap_seekbar_thumb" />
+
+        <TextView
+            android:id="@+id/tv_totalTime"
+            style="@style/music_duration"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_playMusic_back"
+            style="@style/playmusic_buttom_button"
+            android:background="@drawable/back_selector"
+            />
+
+        <Button
+            android:id="@+id/btn_playMusic_previous"
+            style="@style/playmusic_buttom_button"
+            android:background="@drawable/previous_selector" />
+
+        <Button
+            android:id="@+id/btn_playMusic_play"
+            style="@style/playmusic_buttom_button"
+            android:background="@drawable/pause_selector" />
+
+        <Button
+            android:id="@+id/btn_playMusic_next"
+            style="@style/playmusic_buttom_button"
+            android:background="@drawable/next_selector" />
+
+        <Button
+            android:id="@+id/btn_playMusic_playModle"
+            style="@style/playmusic_buttom_button"
+            android:background="@drawable/cycleone_selector" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
